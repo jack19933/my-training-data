@@ -9,7 +9,7 @@
 | Height | 191 cm |
 | Current Weight | 73 kg |
 | Target Weight | 71 kg |
-| Location | Andorra |
+| Location | Girona, spain |
 
 **Weigh-in Protocol:** daily in the morning before food
 
