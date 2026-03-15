@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-15T15:59:47.377248",
+    "last_updated": "2026-03-15T16:19:51.007477",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -52,9 +52,9 @@
       },
       "rhr": {
         "status": "green",
-        "value": 45,
-        "baseline_7d": 42.3,
-        "delta_bpm": 2.7
+        "value": 43,
+        "baseline_7d": 42,
+        "delta_bpm": 1
       },
       "sleep": {
         "status": "green",
@@ -71,7 +71,7 @@
       },
       "ri": {
         "status": "green",
-        "value": 0.86
+        "value": 0.89
       },
       "tsb": {
         "status": "red",
@@ -85,10 +85,10 @@
       "unavailable": 1
     },
     "phase_context": {
-      "phase": null,
-      "phase_week": 0,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 1,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": {
@@ -105,9 +105,11 @@
     "alarm_refs": []
   },
   "history": {
-    "available": false,
-    "history_confidence": "low",
-    "note": "No history.json available. Longitudinal analysis limited to current 28-day window."
+    "available": true,
+    "last_generated": "2026-03-15",
+    "age_days": 0,
+    "total_months": 35,
+    "history_confidence": "high"
   },
   "summary": {
     "period_description": "Last 7 days of training (including today)",
@@ -172,7 +174,7 @@
     },
     "current_metrics": {
       "weight_kg": 73.9,
-      "resting_hr": 45,
+      "resting_hr": 43,
       "hrv": 47.0,
       "sleep_quality": 2,
       "sleep_hours": 7.63,
@@ -180,13 +182,13 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.86,
+    "recovery_index": 0.89,
     "hrv_baseline_7d": 51.6,
-    "rhr_baseline_7d": 42.3,
+    "rhr_baseline_7d": 42,
     "hrv_baseline_28d": 59.0,
-    "rhr_baseline_28d": 42.3,
+    "rhr_baseline_28d": 42.2,
     "latest_hrv": 47.0,
-    "latest_rhr": 45,
+    "latest_rhr": 43,
     "acwr": 1.27,
     "acwr_interpretation": "optimal",
     "monotony": 2.48,
@@ -198,7 +200,7 @@
     "multi_sport_detected": false,
     "strain": 4365.0,
     "stress_tolerance": 17.6,
-    "load_recovery_ratio": 20.5,
+    "load_recovery_ratio": 19.8,
     "tss_7d_total": 1760.0,
     "tss_28d_total": 5557.0,
     "zone_distribution_7d": {
@@ -303,18 +305,17 @@
       "note": "No planned workouts in period"
     },
     "phase_detection": {
-      "phase": null,
-      "confidence": "low",
+      "phase": "Build",
+      "confidence": "medium",
       "reason_codes": [
-        "INSUFFICIENT_LOOKBACK",
-        "INSUFFICIENT_DATA"
+        "NO_PLANNED_WORKOUTS"
       ],
       "basis": {
         "stream_1": {
-          "ctl_slope": null,
-          "acwr_trend": null,
-          "hard_day_pattern": null,
-          "weeks_available": 0
+          "ctl_slope": 4.0,
+          "acwr_trend": "falling",
+          "hard_day_pattern": 5,
+          "weeks_available": 4
         },
         "stream_2": {
           "planned_tss_delta": null,
@@ -324,18 +325,17 @@
           "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 0.0
         },
-        "data_quality": "poor",
+        "data_quality": "good",
         "stream_agreement": null
       },
-      "previous_phase": null,
-      "phase_duration_weeks": 0,
+      "previous_phase": "Build",
+      "phase_duration_weeks": 1,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": null,
+    "phase_detected": "Build",
     "phase_triggers": [
-      "INSUFFICIENT_LOOKBACK",
-      "INSUFFICIENT_DATA"
+      "NO_PLANNED_WORKOUTS"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
@@ -358,7 +358,7 @@
     "p_max": 1357,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-15T15:59:47.377058",
+    "calculation_timestamp": "2026-03-15T16:19:51.006608",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -973,7 +973,7 @@
     {
       "date": "2026-03-15",
       "weight_kg": 73.9,
-      "resting_hr": 45,
+      "resting_hr": 43,
       "hrv_rmssd": 47.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.63,
@@ -1002,7 +1002,7 @@
     "total_tss": 1760,
     "activities_count": 10,
     "avg_hrv": 51.6,
-    "avg_resting_hr": 42.3
+    "avg_resting_hr": 42.0
   },
   "race_calendar": {
     "next_race": null,
