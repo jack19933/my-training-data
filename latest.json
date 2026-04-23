@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-23T05:17:14.507007",
+    "last_updated": "2026-04-23T07:12:25.171991",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -36,21 +36,21 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 61.3,
-        "delta_pct": null
+        "status": "green",
+        "value": 68.0,
+        "baseline_7d": 62.3,
+        "delta_pct": 9.1
       },
       "rhr": {
         "status": "amber",
-        "value": 47,
-        "baseline_7d": 43,
-        "delta_bpm": 4
+        "value": 46,
+        "baseline_7d": 42.9,
+        "delta_bpm": 3.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 7.5,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
@@ -61,8 +61,8 @@
         "value": null
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 1.02
       },
       "tsb": {
         "status": "green",
@@ -70,10 +70,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 5,
       "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 1
     },
     "phase_context": {
       "phase": "Build",
@@ -83,7 +83,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -150,21 +150,21 @@
     },
     "current_metrics": {
       "weight_kg": 73.1,
-      "resting_hr": 47,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 46,
+      "hrv": 68.0,
+      "sleep_quality": 2,
+      "sleep_hours": 7.5,
+      "sleep_formatted": "7h30m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 61.3,
-    "rhr_baseline_7d": 43,
-    "hrv_baseline_28d": 50.7,
-    "rhr_baseline_28d": 42.4,
-    "latest_hrv": null,
-    "latest_rhr": 47,
+    "recovery_index": 1.02,
+    "hrv_baseline_7d": 62.3,
+    "rhr_baseline_7d": 42.9,
+    "hrv_baseline_28d": 51.4,
+    "rhr_baseline_28d": 42.3,
+    "latest_hrv": 68.0,
+    "latest_rhr": 46,
     "acwr": 0.97,
     "acwr_interpretation": "optimal",
     "monotony": 0.96,
@@ -176,7 +176,7 @@
     "multi_sport_detected": false,
     "strain": 970.0,
     "stress_tolerance": 10.1,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 9.9,
     "tss_7d_total": 1010.0,
     "tss_28d_total": 4168.0,
     "zone_distribution_7d": {
@@ -334,9 +334,9 @@
     "p_max": 1323,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-23T05:17:14.505706",
+    "calculation_timestamp": "2026-04-23T07:12:25.171192",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 26,
@@ -749,13 +749,13 @@
     {
       "date": "2026-04-23",
       "weight_kg": null,
-      "resting_hr": 47,
-      "hrv_rmssd": null,
+      "resting_hr": 46,
+      "hrv_rmssd": 68.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.5,
+      "sleep_formatted": "7h30m",
+      "sleep_quality": 2,
+      "sleep_score": 88.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -777,8 +777,8 @@
     "total_training_formatted": "20h13m",
     "total_tss": 1010,
     "activities_count": 6,
-    "avg_hrv": 61.3,
-    "avg_resting_hr": 43.0
+    "avg_hrv": 62.3,
+    "avg_resting_hr": 42.9
   },
   "race_calendar": {
     "next_race": null,
