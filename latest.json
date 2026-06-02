@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-02T02:36:36.957188",
+    "last_updated": "2026-06-02T07:10:20.182426",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -26,21 +26,21 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 67.2,
-        "delta_pct": null
+        "status": "amber",
+        "value": 54.0,
+        "baseline_7d": 65.3,
+        "delta_pct": -17.3
       },
       "rhr": {
         "status": "green",
-        "value": 42,
-        "baseline_7d": 40.9,
-        "delta_bpm": 1.1
+        "value": 39,
+        "baseline_7d": 40.4,
+        "delta_bpm": -1.4
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 9.87,
+        "quality": 1
       },
       "acwr": {
         "status": "green",
@@ -51,8 +51,8 @@
         "value": null
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.86
       },
       "tsb": {
         "status": "green",
@@ -60,10 +60,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 1
     },
     "phase_context": {
       "phase": "Deload",
@@ -73,7 +73,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -140,21 +140,21 @@
     },
     "current_metrics": {
       "weight_kg": 72.6,
-      "resting_hr": 42,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 39,
+      "hrv": 54.0,
+      "sleep_quality": 1,
+      "sleep_hours": 9.87,
+      "sleep_formatted": "9h52m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 67.2,
-    "rhr_baseline_7d": 40.9,
+    "recovery_index": 0.86,
+    "hrv_baseline_7d": 65.3,
+    "rhr_baseline_7d": 40.4,
     "hrv_baseline_28d": 53.9,
-    "rhr_baseline_28d": 41.3,
-    "latest_hrv": null,
-    "latest_rhr": 42,
+    "rhr_baseline_28d": 41.2,
+    "latest_hrv": 54.0,
+    "latest_rhr": 39,
     "acwr": 1.01,
     "acwr_interpretation": "optimal",
     "monotony": 1.29,
@@ -166,7 +166,7 @@
     "multi_sport_detected": false,
     "strain": 1805.0,
     "stress_tolerance": 14.0,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 16.3,
     "tss_7d_total": 1399.0,
     "tss_28d_total": 5533.0,
     "zone_distribution_7d": {
@@ -324,9 +324,9 @@
     "p_max": 1309,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-02T02:36:36.956323",
+    "calculation_timestamp": "2026-06-02T07:10:20.181625",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 5,
       "activities_28d": 29,
@@ -689,13 +689,13 @@
     {
       "date": "2026-06-02",
       "weight_kg": null,
-      "resting_hr": 42,
-      "hrv_rmssd": null,
+      "resting_hr": 39,
+      "hrv_rmssd": 54.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.87,
+      "sleep_formatted": "9h52m",
+      "sleep_quality": 1,
+      "sleep_score": 93.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -717,8 +717,8 @@
     "total_training_formatted": "23h32m",
     "total_tss": 1399,
     "activities_count": 5,
-    "avg_hrv": 67.2,
-    "avg_resting_hr": 40.9
+    "avg_hrv": 65.3,
+    "avg_resting_hr": 40.4
   },
   "race_calendar": {
     "next_race": null,
