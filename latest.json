@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-21T21:03:25.018225",
+    "last_updated": "2026-06-21T22:22:09.660500",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -32,10 +32,10 @@
         "delta_pct": 7.0
       },
       "rhr": {
-        "status": "green",
-        "value": 42,
-        "baseline_7d": 40.6,
-        "delta_bpm": 1.4
+        "status": "amber",
+        "value": 44,
+        "baseline_7d": 40.9,
+        "delta_bpm": 3.1
       },
       "sleep": {
         "status": "green",
@@ -52,7 +52,7 @@
       },
       "ri": {
         "status": "green",
-        "value": 1.03
+        "value": 0.99
       },
       "tsb": {
         "status": "green",
@@ -60,8 +60,8 @@
       }
     },
     "signal_summary": {
-      "green": 6,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
       "unavailable": 1
     },
@@ -73,7 +73,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -146,7 +146,7 @@
     },
     "current_metrics": {
       "weight_kg": 72.524,
-      "resting_hr": 42,
+      "resting_hr": 44,
       "hrv": 63.0,
       "sleep_quality": 2,
       "sleep_hours": 7.33,
@@ -154,13 +154,13 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.03,
+    "recovery_index": 0.99,
     "hrv_baseline_7d": 58.9,
-    "rhr_baseline_7d": 40.6,
+    "rhr_baseline_7d": 40.9,
     "hrv_baseline_28d": 63.3,
     "rhr_baseline_28d": 41.5,
     "latest_hrv": 63.0,
-    "latest_rhr": 42,
+    "latest_rhr": 44,
     "acwr": 1.03,
     "acwr_interpretation": "optimal",
     "monotony": 1.84,
@@ -172,7 +172,7 @@
     "multi_sport_detected": false,
     "strain": 1800.0,
     "stress_tolerance": 9.8,
-    "load_recovery_ratio": 9.5,
+    "load_recovery_ratio": 9.9,
     "tss_7d_total": 978.0,
     "tss_28d_total": 3785.0,
     "zone_distribution_7d": {
@@ -330,7 +330,7 @@
     "p_max": 1289,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 75.0,
-    "calculation_timestamp": "2026-06-21T21:03:25.017337",
+    "calculation_timestamp": "2026-06-21T22:22:09.659649",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -845,7 +845,7 @@
     {
       "date": "2026-06-21",
       "weight_kg": 72.524,
-      "resting_hr": 42,
+      "resting_hr": 44,
       "hrv_rmssd": 63.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.33,
@@ -874,7 +874,7 @@
     "total_tss": 978,
     "activities_count": 8,
     "avg_hrv": 58.9,
-    "avg_resting_hr": 40.6
+    "avg_resting_hr": 40.9
   },
   "race_calendar": {
     "next_race": null,
