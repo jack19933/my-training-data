@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-06T16:15:21.886766",
+    "last_updated": "2026-10-06T21:04:38.250127",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -27,19 +27,19 @@
     "signals": {
       "hrv": {
         "status": "green",
-        "value": 65.0,
-        "baseline_7d": 58.7,
-        "delta_pct": 10.7
+        "value": 74.0,
+        "baseline_7d": 61.0,
+        "delta_pct": 21.3
       },
       "rhr": {
         "status": "green",
         "value": 43,
-        "baseline_7d": 43.3,
-        "delta_bpm": -0.3
+        "baseline_7d": 43,
+        "delta_bpm": 0
       },
       "sleep": {
         "status": "green",
-        "hours": 8.05,
+        "hours": 7.84,
         "quality": 1
       },
       "acwr": {
@@ -52,7 +52,7 @@
       },
       "ri": {
         "status": "green",
-        "value": 1.12
+        "value": 1.21
       },
       "tsb": {
         "status": "green",
@@ -110,7 +110,7 @@
       "w_prime": 34970,
       "w_prime_kj": 35.0,
       "p_max": 1269,
-      "vo2max": null,
+      "vo2max": 77.0,
       "sports": {
         "cycling": {
           "lthr": 174,
@@ -141,19 +141,19 @@
     "current_metrics": {
       "weight_kg": 72.2,
       "resting_hr": 43,
-      "hrv": 65.0,
+      "hrv": 74.0,
       "sleep_quality": 1,
-      "sleep_hours": 8.05,
-      "sleep_formatted": "8h3m"
+      "sleep_hours": 7.84,
+      "sleep_formatted": "7h50m"
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.12,
-    "hrv_baseline_7d": 58.7,
-    "rhr_baseline_7d": 43.3,
-    "hrv_baseline_28d": 54.6,
+    "recovery_index": 1.21,
+    "hrv_baseline_7d": 61.0,
+    "rhr_baseline_7d": 43,
+    "hrv_baseline_28d": 55.2,
     "rhr_baseline_28d": 43.5,
-    "latest_hrv": 65.0,
+    "latest_hrv": 74.0,
     "latest_rhr": 43,
     "acwr": 1.06,
     "acwr_interpretation": "optimal",
@@ -166,7 +166,7 @@
     "multi_sport_detected": false,
     "strain": 1667.0,
     "stress_tolerance": 11.0,
-    "load_recovery_ratio": 9.9,
+    "load_recovery_ratio": 9.1,
     "tss_7d_total": 1104.0,
     "tss_28d_total": 4147.0,
     "zone_distribution_7d": {
@@ -323,8 +323,8 @@
     "w_prime_kj": 35.0,
     "p_max": 1269,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": null,
-    "calculation_timestamp": "2026-10-06T16:15:21.885921",
+    "vo2max": 77.0,
+    "calculation_timestamp": "2026-10-06T21:04:38.249314",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -757,7 +757,7 @@
     {
       "date": "2026-10-04",
       "weight_kg": null,
-      "resting_hr": 42,
+      "resting_hr": 41,
       "hrv_rmssd": 65.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.02,
@@ -773,13 +773,13 @@
     {
       "date": "2026-10-05",
       "weight_kg": null,
-      "resting_hr": 45,
-      "hrv_rmssd": 55.0,
+      "resting_hr": 44,
+      "hrv_rmssd": 62.0,
       "hrv_sdnn": null,
-      "sleep_hours": 6.82,
-      "sleep_formatted": "6h49m",
+      "sleep_hours": 6.03,
+      "sleep_formatted": "6h1m",
       "sleep_quality": 2,
-      "sleep_score": 88.0,
+      "sleep_score": 73.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -790,17 +790,17 @@
       "date": "2026-10-06",
       "weight_kg": null,
       "resting_hr": 43,
-      "hrv_rmssd": 65.0,
+      "hrv_rmssd": 74.0,
       "hrv_sdnn": null,
-      "sleep_hours": 8.05,
-      "sleep_formatted": "8h3m",
+      "sleep_hours": 7.84,
+      "sleep_formatted": "7h50m",
       "sleep_quality": 1,
-      "sleep_score": 92.0,
+      "sleep_score": 87.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
       "avg_sleeping_hr": 47.125,
-      "vo2max": null
+      "vo2max": 77.0
     }
   ],
   "planned_workouts": [
@@ -829,8 +829,8 @@
     "total_training_formatted": "22h15m",
     "total_tss": 1104,
     "activities_count": 7,
-    "avg_hrv": 58.7,
-    "avg_resting_hr": 43.3
+    "avg_hrv": 61.0,
+    "avg_resting_hr": 43.0
   },
   "race_calendar": {
     "next_race": null,
