@@ -15,12 +15,21 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-25T12:11:19.600917",
+    "last_updated": "2026-10-25T16:10:49.649016",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
   },
   "alerts": [
+    {
+      "metric": "rhr",
+      "value": 73,
+      "severity": "warning",
+      "threshold": "\u2191\u22655bpm vs baseline (47.7)",
+      "context": "RHR 73 is 25.3bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
+      "persistence_days": 1,
+      "tier": 1
+    },
     {
       "metric": "acwr",
       "value": 0.04,
@@ -41,7 +50,7 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "modify",
+    "recommendation": "skip",
     "priority": 2,
     "signals": {
       "hrv": {
@@ -51,14 +60,14 @@
         "delta_pct": 6.9
       },
       "rhr": {
-        "status": "green",
-        "value": 42,
-        "baseline_7d": 43.3,
-        "delta_bpm": -1.3
+        "status": "red",
+        "value": 73,
+        "baseline_7d": 47.7,
+        "delta_bpm": 25.3
       },
       "sleep": {
         "status": "red",
-        "hours": 4.33,
+        "hours": 4.51,
         "quality": 4
       },
       "acwr": {
@@ -70,8 +79,8 @@
         "value": null
       },
       "ri": {
-        "status": "green",
-        "value": 1.1
+        "status": "amber",
+        "value": 0.7
       },
       "tsb": {
         "status": "green",
@@ -79,9 +88,9 @@
       }
     },
     "signal_summary": {
-      "green": 4,
-      "amber": 1,
-      "red": 1,
+      "green": 2,
+      "amber": 2,
+      "red": 2,
       "unavailable": 1
     },
     "phase_context": {
@@ -91,18 +100,8 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "sleep",
-        "acwr"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "reduce",
-        "cap_zone": "Z2"
-      }
-    },
-    "reason": "P2 signal count. 1 red (sleep), 1 amber (acwr).",
+    "modification": null,
+    "reason": "P2 signal count. 2 red (rhr, sleep), 2 amber (acwr, ri).",
     "alarm_refs": []
   },
   "history": {
@@ -169,21 +168,21 @@
     },
     "current_metrics": {
       "weight_kg": 72.4,
-      "resting_hr": 42,
+      "resting_hr": 73,
       "hrv": 71.0,
       "sleep_quality": 4,
-      "sleep_hours": 4.33,
-      "sleep_formatted": "4h19m"
+      "sleep_hours": 4.51,
+      "sleep_formatted": "4h30m"
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.1,
+    "recovery_index": 0.7,
     "hrv_baseline_7d": 66.4,
-    "rhr_baseline_7d": 43.3,
+    "rhr_baseline_7d": 47.7,
     "hrv_baseline_28d": 50.1,
-    "rhr_baseline_28d": 44.3,
+    "rhr_baseline_28d": 45.4,
     "latest_hrv": 71.0,
-    "latest_rhr": 42,
+    "latest_rhr": 73,
     "acwr": 0.04,
     "acwr_interpretation": "undertraining",
     "monotony": 0.38,
@@ -195,7 +194,7 @@
     "multi_sport_detected": false,
     "strain": 10.0,
     "stress_tolerance": 0.3,
-    "load_recovery_ratio": 0.2,
+    "load_recovery_ratio": 0.4,
     "tss_7d_total": 25.0,
     "tss_28d_total": 2792.0,
     "zone_distribution_7d": {
@@ -349,7 +348,7 @@
     "p_max": 1253,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-25T12:11:19.600255",
+    "calculation_timestamp": "2026-10-25T16:10:49.648225",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -514,11 +513,11 @@
     {
       "date": "2026-10-25",
       "weight_kg": null,
-      "resting_hr": 42,
+      "resting_hr": 73,
       "hrv_rmssd": 71.0,
       "hrv_sdnn": null,
-      "sleep_hours": 4.33,
-      "sleep_formatted": "4h19m",
+      "sleep_hours": 4.51,
+      "sleep_formatted": "4h30m",
       "sleep_quality": 4,
       "sleep_score": 43.0,
       "mental_energy": null,
@@ -555,7 +554,7 @@
     "total_tss": 25,
     "activities_count": 1,
     "avg_hrv": 66.4,
-    "avg_resting_hr": 43.3
+    "avg_resting_hr": 47.7
   },
   "race_calendar": {
     "next_race": null,
